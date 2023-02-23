@@ -1,4 +1,4 @@
-.commentCard {
+.replyCard {
   position: relative;
   background: #fff;
   padding: 15px;
@@ -13,7 +13,7 @@
   border-radius: 8px;
 }
 
-.commentCard__header {
+.replyCard__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,24 +23,24 @@
   gap: 15px;
 }
 
-.commentCard__header__avatar {
+.replyCard__header__avatar {
   width: 35px;
 }
 
-.commentCard__header__userName {
+.replyCard__header__userName {
   font-weight: 500;
 }
 
-.commentCard__header__createdAt {
+.replyCard__header__createdAt {
   color: #67727e;
 }
 
-.commentCard__comment {
+.replyCard__comment {
   color: #67727e;
   line-height: 1.5;
 }
 
-.commentCard__footer {
+.replyCard__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +52,7 @@
           align-items: center;
 }
 
-.commentCard__footer .replyBtn {
+.replyCard__footer .replyBtn {
   background: none;
   outline: none;
   border: none;
@@ -62,28 +62,20 @@
   cursor: pointer;
 }
 
-.commentCard__footer .replyBtn svg {
+.replyCard__footer .replyBtn svg {
   margin-right: 10px;
 }
 
-.commentCard__footer .replyBtn:hover {
+.replyCard__footer .replyBtn:hover {
   color: #c3c4ef;
 }
 
-.commentCard__footer .replyBtn:hover svg path {
+.replyCard__footer .replyBtn:hover svg path {
   fill: #c3c4ef;
 }
 
-.replyContainer {
-  padding-left: 20px;
-  border-left: 3px solid #eaecf1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+.replyingTo {
+  color: #5457b6;
+  font-weight: 500;
 }
-/*# sourceMappingURL=CommentCard.module.css.map */
+/*# sourceMappingURL=ReplyCard.module.css.map */
