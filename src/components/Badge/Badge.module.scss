@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: hsl(228, 33%, 97%);
+  padding: 10px;
+  border-radius: 5px;
+
+  .count {
+    color: $blueHighlight;
+    font-weight: 500;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .icon:hover path {
+    fill: $blueHighlight;
+  }
+}

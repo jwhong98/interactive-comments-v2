@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,IAAI;EACT,UAAU,EAAE,OAAkB;EAC9B,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;CAcnB;;AApBD,AAQE,MARI,CAQJ,MAAM,CAAC;EACL,KAAK,ECXO,OAAkB;EDY9B,WAAW,EAAE,GAAG;CACjB;;AAXH,AAaE,MAbI,CAaJ,KAAK,CAAC;EACJ,MAAM,EAAE,OAAO;CAChB;;AAfH,AAiBE,MAjBI,CAiBJ,KAAK,AAAA,MAAM,CAAC,IAAI,CAAC;EACf,IAAI,ECpBQ,OAAkB;CDqB/B",
     "sources": [
-        "Badge.module.scss"
+        "Badge.module.scss",
+        "../../styles/_variables.scss"
     ],
     "names": [],
     "file": "Badge.module.css"

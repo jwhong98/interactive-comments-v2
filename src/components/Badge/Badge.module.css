@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=Badge.module.css.map */
+.badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  background: #f5f6fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.badge .count {
+  color: #5457b6;
+  font-weight: 500;
+}
+
+.badge .icon {
+  cursor: pointer;
+}
+
+.badge .icon:hover path {
+  fill: #5457b6;
+}
+/*# sourceMappingURL=Badge.module.css.map */
