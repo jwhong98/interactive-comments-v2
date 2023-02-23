@@ -1,0 +1,74 @@
+.commentCard {
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.commentCard__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.commentCard__header__avatar {
+  width: 40px;
+}
+
+.commentCard__header__userName {
+  font-weight: 500;
+}
+
+.commentCard__header__createdAt {
+  color: #67727e;
+}
+
+.commentCard__comment {
+  color: #67727e;
+  line-height: 1.5;
+}
+
+.commentCard__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.commentCard__footer .replyBtn {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5457b6;
+  cursor: pointer;
+}
+
+.commentCard__footer .replyBtn::before {
+  content: url("../../assets/images/icon-reply.svg");
+  margin-right: 10px;
+  width: 100%;
+}
+
+.commentCard__footer .replyBtn:hover {
+  color: #c3c4ef;
+}
+/*# sourceMappingURL=CommentCard.module.css.map */
