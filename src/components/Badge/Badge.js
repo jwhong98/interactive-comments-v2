@@ -15,7 +15,7 @@ const Badge = (props) => {
           fill="#C5C6EF"
         />
       </svg>
-      <span className={classes.count}>12</span>
+      <span className={classes.count}>{props.score}</span>
       <svg
         className={classes.icon}
         width="11"

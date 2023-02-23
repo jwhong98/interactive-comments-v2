@@ -1,14 +1,14 @@
 import React from "react";
 import classes from "./Main.module.css";
-import { data } from "../../data.json";
+import data from "../../data.json";
 import CommentCard from "../CommentCard/CommentCard";
 
 const Main = () => {
-  return (
-    <main>
-      <CommentCard />
-    </main>
-  );
+  const createCommentCard = (info) => {
+    return <CommentCard key={info.id} {...info} />;
+  };
+
+  return <main>{data.comments.map(createCommentCard)}</main>;
 };
 
 export default Main;
