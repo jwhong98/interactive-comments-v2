@@ -78,7 +78,7 @@
   gap: 15px;
 }
 
-.commentCard__footer .buttonContainer button {
+.commentCard__footer button {
   background: none;
   outline: none;
   border: none;
@@ -87,35 +87,31 @@
   cursor: pointer;
 }
 
-.commentCard__footer .buttonContainer .replyBtn {
+.commentCard__footer button svg {
+  margin-right: 10px;
+}
+
+.commentCard__footer .btn {
   color: #5457b6;
 }
 
-.commentCard__footer .buttonContainer .replyBtn svg {
-  margin-right: 10px;
-}
-
-.commentCard__footer .buttonContainer .replyBtn:hover {
+.commentCard__footer .btn:hover {
   color: #c3c4ef;
 }
 
-.commentCard__footer .buttonContainer .replyBtn:hover svg path {
+.commentCard__footer .btn:hover svg path {
   fill: #c3c4ef;
 }
 
-.commentCard__footer .buttonContainer .deleteBtn {
+.commentCard__footer .deleteBtn {
   color: #ed6468;
 }
 
-.commentCard__footer .buttonContainer .deleteBtn svg {
-  margin-right: 10px;
-}
-
-.commentCard__footer .buttonContainer .deleteBtn:hover {
+.commentCard__footer .deleteBtn:hover {
   color: #ffb8bb;
 }
 
-.commentCard__footer .buttonContainer .deleteBtn:hover svg path {
+.commentCard__footer .deleteBtn:hover svg path {
   fill: #ffb8bb;
 }
 /*# sourceMappingURL=CommentCard.module.css.map */

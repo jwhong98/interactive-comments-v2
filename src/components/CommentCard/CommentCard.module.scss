@@ -52,44 +52,42 @@
       display: flex;
       align-items: center;
       gap: 15px;
-      button {
-        background: none;
-        outline: none;
-        border: none;
-        font-size: 1rem;
-        font-weight: 500;
-        cursor: pointer;
-      }
-      .replyBtn {
-        color: $blueHighlight;
+    }
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
 
-        svg {
-          margin-right: 10px;
-        }
+      svg {
+        margin-right: 10px;
       }
+    }
 
-      .replyBtn:hover {
-        color: $blueHighlightHover;
-      }
+    .btn {
+      color: $blueHighlight;
+    }
 
-      .replyBtn:hover svg path {
-        fill: $blueHighlightHover;
-      }
+    .btn:hover {
+      color: $blueHighlightHover;
+    }
 
-      .deleteBtn {
-        color: hsl(358, 79%, 66%);
-        svg {
-          margin-right: 10px;
-        }
-      }
+    .btn:hover svg path {
+      fill: $blueHighlightHover;
+    }
 
-      .deleteBtn:hover {
-        color: $redHighlightHover;
-      }
+    .deleteBtn {
+      color: hsl(358, 79%, 66%);
+    }
 
-      .deleteBtn:hover svg path {
-        fill: $redHighlightHover;
-      }
+    .deleteBtn:hover {
+      color: $redHighlightHover;
+    }
+
+    .deleteBtn:hover svg path {
+      fill: $redHighlightHover;
     }
   }
 }
