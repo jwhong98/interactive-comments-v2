@@ -31,6 +31,17 @@
   font-weight: 500;
 }
 
+.commentCard__header__currentUserBadge {
+  background: #5457b6;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1;
+  margin-left: -5px;
+  font-size: 0.9rem;
+}
+
 .commentCard__header__createdAt {
   color: #67727e;
 }
@@ -38,6 +49,11 @@
 .commentCard__comment {
   color: #67727e;
   line-height: 1.5;
+}
+
+.commentCard__comment .replyTo {
+  color: #5457b6;
+  font-weight: 500;
 }
 
 .commentCard__footer {

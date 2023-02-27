@@ -14,11 +14,21 @@ const CommentCard = (props) => {
         <span className={classes.commentCard__header__userName}>
           {props.user.username}
         </span>
+        {props.currentUser.username === props.user.username && (
+          <span className={classes.commentCard__header__currentUserBadge}>
+            you
+          </span>
+        )}
         <span className={classes.commentCard__header__createdAt}>
           {props.createdAt}
         </span>
       </div>
-      <div className={classes.commentCard__comment}>{props.content}</div>
+      <div className={classes.commentCard__comment}>
+        {props.replyingTo && (
+          <span className={classes.replyTo}>@{props.replyingTo} </span>
+        )}
+        {props.content}
+      </div>
       <div className={classes.commentCard__footer}>
         <Badge score={props.score} />
         <button className={classes.replyBtn}>

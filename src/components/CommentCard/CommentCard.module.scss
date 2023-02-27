@@ -18,6 +18,16 @@
     &__userName {
       font-weight: 500;
     }
+    &__currentUserBadge {
+      background: $blueHighlight;
+      padding: 4px 8px;
+      border-radius: 3px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 1;
+      margin-left: -5px;
+      font-size: 0.9rem;
+    }
     &__createdAt {
       color: $textGray;
     }
@@ -26,6 +36,11 @@
   &__comment {
     color: $textGray;
     line-height: 1.5;
+
+    .replyTo {
+      color: $blueHighlight;
+      font-weight: 500;
+    }
   }
 
   &__footer {
@@ -45,12 +60,7 @@
         margin-right: 10px;
       }
     }
-    // may need to switch to img tag
-    // .replyBtn::before {
-    //   content: url("../../assets/icon-reply.svg");
-    //   margin-right: 10px;
-    //   width: 100%;
-    // }
+
     .replyBtn:hover {
       color: $blueHighlightHover;
     }
