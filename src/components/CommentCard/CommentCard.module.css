@@ -114,4 +114,42 @@
 .commentCard__footer .deleteBtn:hover svg path {
   fill: #ffb8bb;
 }
+
+.replyToComment {
+  background: #fff;
+  margin-top: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.replyToComment textarea {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #5457b6;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.replyToComment__img {
+  width: 40px;
+}
+
+.replyToComment__button {
+  margin-left: auto;
+  padding: 10px;
+  background: #5457b6;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+}
 /*# sourceMappingURL=CommentCard.module.css.map */

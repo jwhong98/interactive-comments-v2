@@ -91,3 +91,37 @@
     }
   }
 }
+
+.replyToComment {
+  background: #fff;
+  margin-top: -10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+
+  textarea {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid $blueHighlight;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 40px;
+  }
+
+  &__button {
+    margin-left: auto;
+    padding: 10px;
+    background: $blueHighlight;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+}
