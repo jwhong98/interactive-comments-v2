@@ -1,0 +1,74 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.deleteComment {
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.deleteComment__head {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.deleteComment__content {
+  line-height: 1.5;
+}
+
+.deleteComment__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.deleteComment__buttons__button {
+  background: #67727e;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.15rem;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.deleteComment__buttons__button__delete {
+  background: #ed6468;
+}
+
+.deleteComment__buttons__button:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=DeleteCommentModal.module.css.map */

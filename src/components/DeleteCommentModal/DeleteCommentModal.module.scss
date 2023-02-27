@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.deleteComment {
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 31;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  &__head {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  &__content {
+    line-height: 1.5;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__button {
+      background: hsl(211, 10%, 45%);
+      border: none;
+      outline: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.15rem;
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      &__delete {
+        background: $redHighlight;
+      }
+    }
+    &__button:hover {
+      opacity: 0.5;
+    }
+  }
+}

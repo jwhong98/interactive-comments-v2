@@ -47,26 +47,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .replyBtn {
-      background: none;
-      outline: none;
-      border: none;
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: $blueHighlight;
-      cursor: pointer;
 
-      svg {
-        margin-right: 10px;
+    .buttonContainer {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      button {
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
       }
-    }
+      .replyBtn {
+        color: $blueHighlight;
 
-    .replyBtn:hover {
-      color: $blueHighlightHover;
-    }
+        svg {
+          margin-right: 10px;
+        }
+      }
 
-    .replyBtn:hover svg path {
-      fill: $blueHighlightHover;
+      .replyBtn:hover {
+        color: $blueHighlightHover;
+      }
+
+      .replyBtn:hover svg path {
+        fill: $blueHighlightHover;
+      }
+
+      .deleteBtn {
+        color: hsl(358, 79%, 66%);
+        svg {
+          margin-right: 10px;
+        }
+      }
+
+      .deleteBtn:hover {
+        color: $redHighlightHover;
+      }
+
+      .deleteBtn:hover svg path {
+        fill: $redHighlightHover;
+      }
     }
   }
 }
