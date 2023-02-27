@@ -85,7 +85,7 @@ const CommentCard = (props) => {
             id=""
             rows="5"
           >{`@${props.user.username}`}</textarea>
-          <button className={classes.replyToComment__button}>Reply</button>
+          <button className={classes.replyToComment__button}>REPLY</button>
         </div>
       )}
     </>

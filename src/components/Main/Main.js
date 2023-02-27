@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Main.module.css";
 import data from "../../data.json";
 import Thread from "../Thread/Thread";
+import AddComment from "../AddComment/AddComment";
 
 const Main = (props) => {
   const currentUser = data.currentUser;
@@ -14,7 +15,12 @@ const Main = (props) => {
       />
     );
   };
-  return <main>{data.comments.map(createThread)}</main>;
+  return (
+    <main>
+      {data.comments.map(createThread)}
+      <AddComment currentUser={currentUser} />
+    </main>
+  );
 };
 
 export default Main;
