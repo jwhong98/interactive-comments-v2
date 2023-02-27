@@ -73,17 +73,4 @@
 .commentCard__footer .replyBtn:hover svg path {
   fill: #c3c4ef;
 }
-
-.replyContainer {
-  padding-left: 20px;
-  border-left: 3px solid #eaecf1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
 /*# sourceMappingURL=CommentCard.module.css.map */
