@@ -10,14 +10,12 @@
 }
 
 .deleteComment {
-  position: absolute;
+  position: fixed;
   background: #fff;
+  left: 50%;
   top: 50%;
-  width: 90%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 31;
   display: -webkit-box;
   display: -ms-flexbox;
