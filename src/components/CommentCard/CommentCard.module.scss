@@ -123,5 +123,10 @@
     color: #fff;
     font-weight: 500;
     border-radius: 8px;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background: $blueHighlightHover;
   }
 }

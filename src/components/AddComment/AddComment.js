@@ -1,17 +1,29 @@
 import React from "react";
 import classes from "./AddComment.module.css";
+import { CreateComment } from "../../Modules/CreateComment";
 
 const AddComment = (props) => {
+  const onClickHandler = () => {
+    const textArea = document.getElementById("newComment");
+    if (textArea.value === "") {
+      alert("Comment cannot be empty");
+    } else {
+      const newComment = CreateComment(textArea.value, props.currentUser);
+      props.onAddComment(newComment);
+      textArea.value = "";
+    }
+  };
+
   return (
     <div className={classes.addComment}>
       <img src={props.currentUser.image.webp} alt="user profile" />
       <textarea
-        name=""
-        id=""
+        name="newComment"
+        id="newComment"
         rows="4"
         placeholder="Add a comment..."
       ></textarea>
-      <button>SEND</button>
+      <button onClick={onClickHandler}>SEND</button>
     </div>
   );
 };

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Main.module.css";
 import data from "../../data.json";
 import Thread from "../Thread/Thread";
 import AddComment from "../AddComment/AddComment";
 
 const Main = (props) => {
+  const [comments, setComments] = useState(data.comments);
   const currentUser = data.currentUser;
   const createThread = (info) => {
     return (
@@ -15,10 +16,15 @@ const Main = (props) => {
       />
     );
   };
+
+  const onAddComment = (comment) => {
+    setComments([...comments, comment]);
+    console.log(comments);
+  };
   return (
     <main>
-      {data.comments.map(createThread)}
-      <AddComment currentUser={currentUser} />
+      {comments.map(createThread)}
+      <AddComment currentUser={currentUser} onAddComment={onAddComment} />
     </main>
   );
 };

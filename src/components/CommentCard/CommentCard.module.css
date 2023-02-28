@@ -151,5 +151,10 @@
   color: #fff;
   font-weight: 500;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.replyToComment__button:hover {
+  background: #c3c4ef;
 }
 /*# sourceMappingURL=CommentCard.module.css.map */

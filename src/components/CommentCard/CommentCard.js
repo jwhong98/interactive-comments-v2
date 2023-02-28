@@ -38,7 +38,6 @@ const CommentCard = (props) => {
         </div>
         <div className={classes.commentCard__footer}>
           <Badge score={props.score} />
-
           {isCurrentUser ? (
             <div className={classes.buttonContainer}>
               <button className={classes.deleteBtn} onClick={props.onClick}>
@@ -84,7 +83,7 @@ const CommentCard = (props) => {
             name=""
             id=""
             rows="5"
-          >{`@${props.user.username}`}</textarea>
+          >{`@${props.user.username} `}</textarea>
           <button className={classes.replyToComment__button}>REPLY</button>
         </div>
       )}

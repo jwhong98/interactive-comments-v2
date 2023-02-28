@@ -7,5 +7,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 /*# sourceMappingURL=Main.module.css.map */
