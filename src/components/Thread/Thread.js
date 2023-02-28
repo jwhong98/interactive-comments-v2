@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Thread.module.css";
 import CommentCard from "../CommentCard/CommentCard";
 
 const Thread = (props) => {
+  const [comment, setComment] = useState(props.comment);
+
+  const onAddReply = (reply) => {
+    setComment((prev) => ({
+      ...prev,
+      replies: [...prev.replies, reply],
+    }));
+    console.log(comment);
+  };
+
   const createCommentCard = (info) => {
     return (
       <CommentCard
         key={info.id}
         currentUser={props.currentUser}
         onClick={props.onClick}
+        onAddReply={onAddReply}
         {...info}
       />
     );
@@ -18,11 +29,12 @@ const Thread = (props) => {
       <CommentCard
         currentUser={props.currentUser}
         onClick={props.onClick}
-        {...props.comment}
+        onAddReply={onAddReply}
+        {...comment}
       />
-      {props.comment.replies.length !== 0 && (
+      {comment.replies.length !== 0 && (
         <div className={classes.replyContainer}>
-          {props.comment.replies.map(createCommentCard)}
+          {comment.replies.map(createCommentCard)}
         </div>
       )}
     </div>

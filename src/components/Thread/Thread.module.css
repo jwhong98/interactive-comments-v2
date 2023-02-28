@@ -20,6 +20,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  width: 100%;
   max-width: 850px;
   margin-left: auto;
 }

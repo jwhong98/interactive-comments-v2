@@ -21,6 +21,7 @@ const Main = (props) => {
     setComments([...comments, comment]);
     console.log(comments);
   };
+
   return (
     <main>
       {comments.map(createThread)}
