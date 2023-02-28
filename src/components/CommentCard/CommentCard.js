@@ -5,6 +5,7 @@ import { CreateComment } from "../../Modules/CreateComment";
 
 const CommentCard = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [score, setScore] = useState(props.score);
   const onToggle = () => {
     setIsOpen(!isOpen);
   };
@@ -15,6 +16,13 @@ const CommentCard = (props) => {
     reply.replyingTo = props.user.username;
     props.onAddReply(reply);
     setIsOpen(!isOpen);
+  };
+
+  const onUpvote = () => {
+    setScore(score + 1);
+  };
+  const onDownvote = () => {
+    score > 0 && setScore(score - 1);
   };
 
   const isCurrentUser =
@@ -47,7 +55,7 @@ const CommentCard = (props) => {
           {props.content}
         </div>
         <div className={classes.commentCard__footer}>
-          <Badge score={props.score} />
+          <Badge score={score} onUpvote={onUpvote} onDownvote={onDownvote} />
           {isCurrentUser ? (
             <div className={classes.buttonContainer}>
               <button className={classes.deleteBtn} onClick={props.onClick}>

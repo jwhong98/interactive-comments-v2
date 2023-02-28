@@ -20,7 +20,7 @@ const AddComment = (props) => {
       <textarea
         name="newComment"
         id="newComment"
-        rows="4"
+        rows="3"
         placeholder="Add a comment..."
       ></textarea>
       <button onClick={onClickHandler}>SEND</button>
