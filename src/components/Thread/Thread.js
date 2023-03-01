@@ -17,9 +17,11 @@ const Thread = (props) => {
     return (
       <CommentCard
         key={info.id}
+        id={info.id}
         currentUser={props.currentUser}
         onClick={props.onClick}
         onAddReply={onAddReply}
+        onDeleteComment={props.onDeleteComment}
         {...info}
       />
     );
@@ -30,6 +32,7 @@ const Thread = (props) => {
         currentUser={props.currentUser}
         onClick={props.onClick}
         onAddReply={onAddReply}
+        onDeleteComment={props.onDeleteComment}
         {...comment}
       />
       {comment.replies.length !== 0 && (

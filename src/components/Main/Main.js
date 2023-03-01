@@ -12,6 +12,7 @@ const Main = (props) => {
       <Thread
         currentUser={currentUser}
         onClick={props.onClick}
+        onDeleteComment={onDeleteComment}
         comment={info}
       />
     );
@@ -19,6 +20,24 @@ const Main = (props) => {
 
   const onAddComment = (comment) => {
     setComments([...comments, comment]);
+    console.log(comments);
+  };
+
+  function findNestedObj(entireObj, keyToFind, valToFind) {
+    let foundObj;
+    JSON.stringify(entireObj, (_, nestedValue) => {
+      if (nestedValue && nestedValue[keyToFind] === valToFind) {
+        foundObj = nestedValue;
+      }
+      return nestedValue;
+    });
+    return foundObj;
+  }
+
+  const onDeleteComment = (val) => {
+    // let found = findNestedObj(comments, "id", val);
+    console.log(val);
+    setComments(comments.filter((el) => el.id !== val));
     console.log(comments);
   };
 
